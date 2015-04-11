@@ -1,13 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kids Can Count</string>
     <string name="action_settings">Settings</string>
     <string name="main_activity">Activity</string>
     <string name="main_hit">Logro</string>
     <string name="main_award">Premios</string>
-    <string name="main_phyco">Spicologia</string>
+    <string name="main_phyco">Psicologia</string>
     <string name="title_activity_create">Crear Actividad</string>
     <string name="title_activity_hit">HitActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_award">AwardActivity</string>
     <string name="title_activity_pyco">PycoActivity</string>
+    <string name="title_activity_stage">StageActivity</string>
+    <string name="title_activity_setup_stage">SetupStageActivity</string>
+    <string name="children_name">Nombre del niño</string>
+    <string name="gender">Género</string>
+    <string name="title_activity_sprite">SpriteActivity</string>
+    <string name="male">Niño</string>
+    <string name="female">Niña</string>
+    <string name="title_form">Formulario de Inicio</string>
+
+    <string-array name="years_array">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 </resources>

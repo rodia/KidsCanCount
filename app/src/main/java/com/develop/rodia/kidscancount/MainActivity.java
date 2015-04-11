@@ -2,7 +2,6 @@ package com.develop.rodia.kidscancount;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,10 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.Button;
 
-
+/**
+ *
+ *  @version 0.1
+ */
 public class MainActivity extends ActionBarActivity {
 
     @Override
@@ -46,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * A placeholder fragment containing a simple view.
+     *
      */
     public static class PlaceholderFragment extends Fragment {
 
@@ -63,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent;
-                    intent = new Intent(getActivity(), CreateActivity.class);
+                    intent = new Intent(getActivity(), StageActivity.class);
                     startActivity(intent);
                 }
             });

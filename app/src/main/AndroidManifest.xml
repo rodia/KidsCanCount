@@ -48,6 +48,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.develop.rodia.kidscancount.MainActivity" />
         </activity>
+        <activity
+            android:name=".StageActivity"
+            android:label="@string/title_activity_stage"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.develop.rodia.kidscancount.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SetupStageActivity"
+            android:label="@string/title_activity_setup_stage"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.develop.rodia.kidscancount.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
