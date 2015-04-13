@@ -80,7 +80,7 @@ public class DragObject {
     }
 
     /**
-     * verificar los bordes, y setear la dirección si llegamos al borde
+     * Check the bound and reset if the object get the limit
      *
      * @param goX
      * @param goY

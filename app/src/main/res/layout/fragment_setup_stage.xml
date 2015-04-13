@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.develop.rodia.kidscancount.SetupStageActivity$PlaceholderFragment">
+    tools:context="com.develop.rodia.kidscancount.SetupStageActivity$PlaceholderFragment"
+    android:gravity="center">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,7 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_form"
-            android:textSize="30dp" />
+            android:paddingBottom="@dimen/padding_main_buttons_top"
+            android:textSize="@dimen/font_size_titles" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +37,7 @@
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.76"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/children_name" />
@@ -44,7 +46,7 @@
             android:id="@+id/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="0.33">
 
             <RadioButton
                 android:id="@+id/male"
@@ -63,13 +65,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Spinner
-            android:id="@+id/oldyears"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" />
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/imageView"
@@ -82,6 +79,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/abc_text"
+            android:paddingBottom="@dimen/margin_button_bottom"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_elements"
+            android:text="@string/send"/>
 
     </LinearLayout>
 </LinearLayout>

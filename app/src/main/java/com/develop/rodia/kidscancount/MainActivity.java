@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     *
+     * This fragmet manage the list of main buttons and controllers the events.
      */
     public static class PlaceholderFragment extends Fragment {
 
@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent;
-                    intent = new Intent(getActivity(), StageActivity.class);
+                    intent = new Intent(getActivity(), InitStage.class);
                     startActivity(intent);
                 }
             });
