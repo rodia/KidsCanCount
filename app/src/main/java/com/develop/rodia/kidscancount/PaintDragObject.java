@@ -81,7 +81,8 @@ public class PaintDragObject extends View {
     private int getTotalForStage(int id) {
         SQLiteDatabase db = new KCCDbHelper(getContext()).getWritableDatabase();
         String[] args = new String[] {id + "", "0"};
-        Cursor c = db.rawQuery("SELECT count(*)" +
+
+        String sql_query = "SELECT count(*) AS total" +
                 " FROM " + ResultContract.StageEntry.TABLE_NAME +
                 " INNER JOIN " + ResultContract.ResourceEntry.TABLE_NAME +
                 " ON (" + ResultContract.ResourceEntry.TABLE_NAME + "." +
@@ -89,13 +90,17 @@ public class PaintDragObject extends View {
                 ResultContract.StageEntry.TABLE_NAME + "." + ResultContract.StageEntry._ID + ")" +
                 " WHERE " + ResultContract.ResourceEntry.TABLE_NAME + "." +
                 ResultContract.ResourceEntry.COLUMN_STAGE_ID + " = ?" +
-                " AND " + ResultContract.ResourceEntry.COLUMN_TYPE + " = ?", args);
+                " AND " + ResultContract.ResourceEntry.TABLE_NAME + "." +
+                ResultContract.ResourceEntry.COLUMN_TYPE + " = ?";
+        Cursor c = db.rawQuery(sql_query, args);
 
+        Log.d(LOG_CLASS, sql_query);
         if (c.moveToFirst()) {
             do {
-                currentStage = c.getInt(0);
+                String temp = c.getString(0);
+                Log.d(LOG_CLASS, "From database " + temp);
+                break;
             } while(c.moveToNext());
-
             if (0 == currentStage) {
                 currentStage = DEFAULT_COUNT_VALUES;
             }

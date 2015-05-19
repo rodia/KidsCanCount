@@ -17,14 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreateActivity"
-            android:label="@string/title_activity_create"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.develop.rodia.kidscancount.MainActivity" />
-        </activity>
-        <activity
             android:name=".HitActivity"
             android:label="@string/title_activity_hit"
             android:parentActivityName=".MainActivity" >
@@ -59,6 +51,14 @@
         <activity
             android:name=".SetupStageActivity"
             android:label="@string/title_activity_setup_stage"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.develop.rodia.kidscancount.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InitStage"
+            android:label="@string/title_activity_init_stage"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

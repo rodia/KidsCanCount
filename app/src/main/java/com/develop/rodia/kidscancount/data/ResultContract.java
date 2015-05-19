@@ -56,7 +56,7 @@ public class ResultContract {
     public static final class AttemptEntry implements BaseColumns {
         public static final String TABLE_NAME = "attempt";
 
-        public static final String COLUMN_ACTIVITY_ID = "activity_id";
+        public static final String COLUMN_STAGE_ID = "stage_id";
         public static final String COLUMN_BENEFICIARY_ID = "beneficiary_id";
         public static final String COLUMN_DATE = "date";
     }
@@ -77,8 +77,9 @@ public class ResultContract {
     public static final class ResourceEntry implements BaseColumns {
         public static final String TABLE_NAME = "resource";
 
-        public static final String COLUMN_ACTIVITY_ID = "activity_id";
+        public static final String COLUMN_STAGE_ID = "stage_id";
         public static final String COLUMN_URL = "url";
         public static final String COLUMN_LEVEL = "level";
+        public static final String COLUMN_TYPE = "type";
     }
 }
